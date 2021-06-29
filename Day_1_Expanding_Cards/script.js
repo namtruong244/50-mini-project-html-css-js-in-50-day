@@ -10,7 +10,6 @@ panels.forEach(panel => {
 })
 
 function removeActiveClasses() {
-    panels.forEach(panel => {
-        panel.classList.remove('panel--active')
-    })
+    const panel = document.querySelector('.panel--active')
+    panel.classList.remove('panel--active')
 }
